@@ -1,38 +1,37 @@
-# Document Copilot
+# Northstar Document AI Assistant
 
-An internal AI chatbot that lets analysts query a corpus of documents in plain English and get sourced, citable answers.
+A full-stack GenAI application that lets analysts query financial filings in natural language and get grounded, citable answers with supporting source passages.
 
 ## The client
 
-**Driftwood Capital** — fictional independent investment research firm. Their analysts spend half their week reading 10-Ks and 10-Qs before they can produce any original analysis. Document Copilot eats that intake work so they can skip straight to insight.
+**Northstar AI** — a fictional independent investment research firm with ~40 analysts.
 
-Full brief: [docs/client-brief.md](docs/client-brief.md)
+Analysts spend a significant amount of time reading 10-Ks and 10-Qs, finding relevant sections, and comparing disclosures across years before they can perform original analysis.
+
+The goal of this project is to reduce that document-intake workload while keeping answers grounded in the source documents.
+
+## Core requirements
+
+The assistant should:
+
+- Answer questions about documents in the corpus
+- Cite the source filing and page
+- Show the supporting passage
+- Refuse when the answer is not supported by the corpus
+- Support authenticated users and conversation history
 
 ## Stack
 
-| Layer              | Choice                                               |
-| ------------------ | ---------------------------------------------------- |
-| Backend            | Python + FastAPI                                     |
-| Frontend           | Vite + React SPA + TypeScript                        |
-| Database           | Supabase Postgres (users, chats, documents, chunks)  |
-| Migrations         | SQLAlchemy models + Alembic                          |
-| Retrieval          | Supabase `pgvector` + Postgres full-text search      |
-| Auth               | Supabase Auth (email only)                           |
-| Hosting            | Railway                                              |
-| LLM + embeddings   | OpenAI                                               |
-
-## Repo layout
-
-```text
-document-copilot/
-├── AGENTS.md           # agent instructions (read first)
-├── README.md           # this file
-├── data/               # local corpus + download script (payloads gitignored)
-├── docs/
-│   └── client-brief.md # the client one-pager
-├── backend/            # FastAPI service
-└── frontend/           # React SPA (Vite)
-```
+| Layer | Choice |
+| --- | --- |
+| Backend | Python + FastAPI |
+| Frontend | React + TypeScript + Vite |
+| Database | Supabase Postgres |
+| Retrieval | `pgvector` + PostgreSQL full-text search |
+| Auth | Supabase Auth |
+| ORM / Migrations | SQLAlchemy + Alembic |
+| LLM + Embeddings | OpenAI |
+| Hosting | Railway |
 
 ## Prerequisites
 
@@ -45,24 +44,17 @@ Install these before setting up `backend/` or `frontend/`:
 | [Node.js](https://nodejs.org/) | 20+ (LTS) | Frontend toolchain | nodejs.org or `nvm install --lts` |
 | [pnpm](https://pnpm.io/installation) | latest | Frontend package manager | `corepack enable && corepack prepare pnpm@latest --activate` |
 
-You also need accounts/keys for external services once the app is wired up. Start with [docs/guides/supabase-setup.md](docs/guides/supabase-setup.md) (account + project), then create an [OpenAI API key](https://platform.openai.com/api-keys) when the LLM layer is wired up.
+You also need accounts/keys for external services once the app is wired up. 
+## Repo layout
 
-## Running locally
-
-To be added during the build. Setup guides:
-
-- [Supabase](docs/guides/supabase-setup.md) — account, hosted project (dashboard or CLI)
-- [Backend](docs/guides/backend-setup.md)
-- [Frontend](docs/guides/frontend-setup.md)
-
-## Sample SEC data
-
-Use the standalone downloader to fetch a small local 10-K sample from SEC EDGAR.
-Edit the params at the top of `data/download.py`, especially `USER_AGENT`, then run:
-
-```bash
-uv run data/download.py
-```
-
-By default this downloads the latest 5 10-K filings for AAPL, MSFT, NVDA, AMZN, and GOOGL into year folders under `data/downloads/` and writes a `manifest.json`.
-Downloaded files are gitignored; the `data/` folder itself stays in git for the script and notes.
+```text
+northstar-document-ai-assistant/
+├── AGENTS.md
+├── README.md
+├── data/
+│   └── download.py
+├── docs/
+│   ├── client-brief.md
+│   └── guides/
+├── backend/
+└── frontend/
