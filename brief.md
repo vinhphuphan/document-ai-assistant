@@ -1,6 +1,6 @@
-# Client Brief — Northstar AI
+# Brief — Northstar AI
 
-## The client
+## Summary
 
 **Northstar AI** is a fictional independent investment research firm with ~40 analysts. They sell deep equity research to institutional clients such as hedge funds, mutual funds, and pension funds under annual subscriptions, along with custom research and analyst calls.
 
