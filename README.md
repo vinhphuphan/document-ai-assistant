@@ -1,4 +1,4 @@
-# Northstar Document AI Assistant
+# Document AI Assistant
 
 A full-stack GenAI application that lets analysts query financial filings in natural language and get grounded, citable answers with supporting source passages.
 
