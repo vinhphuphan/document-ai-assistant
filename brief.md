@@ -1,4 +1,4 @@
-# Brief — Northstar AI
+# Brief — Document AI Assistant
 
 ## Summary
 
