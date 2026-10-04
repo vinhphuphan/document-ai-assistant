@@ -1,21 +1,24 @@
-# Northstar Document AI Assistant
+# Vietnamese Equity Research System
 
-A full-stack GenAI application that lets analysts query financial filings in natural language and get grounded, citable answers with supporting source passages.
+A full-stack GenAI application that lets investors and equity analysts query Vietnamese financial reports in natural language and get grounded, citable answers with supporting source passages and multi-year financial analysis.
 
 ## The client
 
-**Northstar AI** — a fictional independent investment research firm with ~40 analysts.
+**Vietnamese Equity Research System** — a fictional Vietnamese equity research platform for investors and securities analysts.
 
-Analysts spend a significant amount of time reading 10-Ks and 10-Qs, finding relevant sections, and comparing disclosures across years before they can perform original analysis.
+Analysts spend a significant amount of time manually copying financial data from annual reports and financial statements into spreadsheets, calculating multi-year growth rates, and comparing companies before they can perform original analysis based on growth-investing principles such as CANSLIM.
 
-The goal of this project is to reduce that document-intake workload while keeping answers grounded in the source documents.
+The goal of this project is to reduce that repetitive financial-data and document-analysis workload while keeping answers grounded in the source documents.
 
 ## Core requirements
 
 The assistant should:
 
-- Answer questions about documents in the corpus
-- Cite the source filing and page
+- Answer questions about Vietnamese companies and financial reports in the corpus
+- Analyze financial performance across multiple years
+- Identify multi-year growth trends and calculate relevant financial metrics
+- Evaluate documented evidence related to CANSLIM investing factors
+- Cite the source report and page
 - Show the supporting passage
 - Refuse when the answer is not supported by the corpus
 - Support authenticated users and conversation history
@@ -44,11 +47,12 @@ Install these before setting up `backend/` or `frontend/`:
 | [Node.js](https://nodejs.org/) | 20+ (LTS) | Frontend toolchain | nodejs.org or `nvm install --lts` |
 | [pnpm](https://pnpm.io/installation) | latest | Frontend package manager | `corepack enable && corepack prepare pnpm@latest --activate` |
 
-You also need accounts/keys for external services once the app is wired up. 
+You also need accounts/keys for external services once the app is wired up.
+
 ## Repo layout
 
 ```text
-northstar-document-ai-assistant/
+northstar-vietnamese-equity-research-ai/
 ├── AGENTS.md
 ├── README.md
 ├── data/

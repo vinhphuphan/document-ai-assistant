@@ -1,0 +1,250 @@
+{
+  "FPT": {
+    "2021": {
+      "BCTN": {
+        "path": "FPT/2021/BCTN/FPT_Baocaothuongnien_2021.pdf",
+        "status": "downloaded",
+        "size_bytes": 9576810
+      },
+      "BCTC_HOPNHAT": {
+        "path": "FPT/2021/BCTC/FPT_Baocaotaichinh_2021_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 16687698
+      }
+    },
+    "2022": {
+      "BCTN": {
+        "path": "FPT/2022/BCTN/FPT_Baocaothuongnien_2022.pdf",
+        "status": "downloaded",
+        "size_bytes": 13800485
+      },
+      "BCTC_HOPNHAT": {
+        "path": "FPT/2022/BCTC/FPT_Baocaotaichinh_2022_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 4390181
+      }
+    },
+    "2023": {
+      "BCTN": {
+        "path": "FPT/2023/BCTN/FPT_Baocaothuongnien_2023.pdf",
+        "status": "downloaded",
+        "size_bytes": 14723097
+      },
+      "BCTC_HOPNHAT": {
+        "path": "FPT/2023/BCTC/FPT_Baocaotaichinh_2023_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 4581919
+      }
+    },
+    "2024": {
+      "BCTN": {
+        "path": "FPT/2024/BCTN/FPT_Baocaothuongnien_2024.pdf",
+        "status": "downloaded",
+        "size_bytes": 10935353
+      },
+      "BCTC_HOPNHAT": {
+        "path": "FPT/2024/BCTC/FPT_Baocaotaichinh_2024_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 7551071
+      }
+    },
+    "2025": {
+      "BCTN": {
+        "path": "FPT/2025/BCTN/FPT_Baocaothuongnien_2025.pdf",
+        "status": "downloaded",
+        "size_bytes": 12755153
+      },
+      "BCTC_HOPNHAT": {
+        "path": "FPT/2025/BCTC/FPT_Baocaotaichinh_2025_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 8039102
+      }
+    }
+  },
+  "VCB": {
+    "2021": {
+      "BCTN": {
+        "path": "VCB/2021/BCTN/VCB_Baocaothuongnien_2021.pdf",
+        "status": "downloaded",
+        "size_bytes": 7550792
+      },
+      "BCTC_HOPNHAT": {
+        "path": "VCB/2021/BCTC/VCB_Baocaotaichinh_2021_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 13620715
+      }
+    },
+    "2022": {
+      "BCTN": {
+        "path": "VCB/2022/BCTN/VCB_Baocaothuongnien_2022.pdf",
+        "status": "downloaded",
+        "size_bytes": 8943948
+      },
+      "BCTC_HOPNHAT": {
+        "path": "VCB/2022/BCTC/VCB_Baocaotaichinh_2022_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 15449884
+      }
+    },
+    "2023": {
+      "BCTN": {
+        "path": "VCB/2023/BCTN/VCB_Baocaothuongnien_2023.pdf",
+        "status": "downloaded",
+        "size_bytes": 6738359
+      },
+      "BCTC_HOPNHAT": {
+        "path": "VCB/2023/BCTC/VCB_Baocaotaichinh_2023_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 10543527
+      }
+    },
+    "2024": {
+      "BCTN": {
+        "path": "VCB/2024/BCTN/VCB_Baocaothuongnien_2024.pdf",
+        "status": "downloaded",
+        "size_bytes": 7090215
+      },
+      "BCTC_HOPNHAT": {
+        "path": "VCB/2024/BCTC/VCB_Baocaotaichinh_2024_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 6982628
+      }
+    },
+    "2025": {
+      "BCTN": {
+        "path": "VCB/2025/BCTN/VCB_Baocaothuongnien_2025.pdf",
+        "status": "downloaded",
+        "size_bytes": 9410735
+      },
+      "BCTC_HOPNHAT": {
+        "path": "VCB/2025/BCTC/VCB_Baocaotaichinh_2025_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 11552186
+      }
+    }
+  },
+  "MWG": {
+    "2021": {
+      "BCTN": {
+        "path": "MWG/2021/BCTN/MWG_Baocaothuongnien_2021.pdf",
+        "status": "downloaded",
+        "size_bytes": 12853175
+      },
+      "BCTC_HOPNHAT": {
+        "path": "MWG/2021/BCTC/MWG_Baocaotaichinh_2021_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 8576281
+      }
+    },
+    "2022": {
+      "BCTN": {
+        "path": "MWG/2022/BCTN/MWG_Baocaothuongnien_2022.pdf",
+        "status": "downloaded",
+        "size_bytes": 18956745
+      },
+      "BCTC_HOPNHAT": {
+        "path": "MWG/2022/BCTC/MWG_Baocaotaichinh_2022_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 9886376
+      }
+    },
+    "2023": {
+      "BCTN": {
+        "path": "MWG/2023/BCTN/MWG_Baocaothuongnien_2023.pdf",
+        "status": "downloaded",
+        "size_bytes": 7133589
+      },
+      "BCTC_HOPNHAT": {
+        "path": "MWG/2023/BCTC/MWG_Baocaotaichinh_2023_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 18218893
+      }
+    },
+    "2024": {
+      "BCTN": {
+        "path": "MWG/2024/BCTN/MWG_Baocaothuongnien_2024.pdf",
+        "status": "downloaded",
+        "size_bytes": 8204946
+      },
+      "BCTC_HOPNHAT": {
+        "path": "MWG/2024/BCTC/MWG_Baocaotaichinh_2024_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 7109446
+      }
+    },
+    "2025": {
+      "BCTN": {
+        "path": "MWG/2025/BCTN/MWG_Baocaothuongnien_2025.pdf",
+        "status": "downloaded",
+        "size_bytes": 14673532
+      },
+      "BCTC_HOPNHAT": {
+        "path": "MWG/2025/BCTC/MWG_Baocaotaichinh_2025_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 6382488
+      }
+    }
+  },
+  "VIC": {
+    "2021": {
+      "BCTN": {
+        "path": "VIC/2021/BCTN/VIC_Baocaothuongnien_2021.pdf",
+        "status": "downloaded",
+        "size_bytes": 9667270
+      },
+      "BCTC_HOPNHAT": {
+        "path": "VIC/2021/BCTC/VIC_Baocaotaichinh_2021_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 4211443
+      }
+    },
+    "2022": {
+      "BCTN": {
+        "path": "VIC/2022/BCTN/VIC_Baocaothuongnien_2022.pdf",
+        "status": "downloaded",
+        "size_bytes": 12265169
+      },
+      "BCTC_HOPNHAT": {
+        "path": "VIC/2022/BCTC/VIC_Baocaotaichinh_2022_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 6083867
+      }
+    },
+    "2023": {
+      "BCTN": {
+        "path": "VIC/2023/BCTN/VIC_Baocaothuongnien_2023.pdf",
+        "status": "downloaded",
+        "size_bytes": 16273717
+      },
+      "BCTC_HOPNHAT": {
+        "path": "VIC/2023/BCTC/VIC_Baocaotaichinh_2023_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 6679376
+      }
+    },
+    "2024": {
+      "BCTN": {
+        "path": "VIC/2024/BCTN/VIC_Baocaothuongnien_2024.pdf",
+        "status": "downloaded",
+        "size_bytes": 7302670
+      },
+      "BCTC_HOPNHAT": {
+        "path": "VIC/2024/BCTC/VIC_Baocaotaichinh_2024_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 7384362
+      }
+    },
+    "2025": {
+      "BCTN": {
+        "path": "VIC/2025/BCTN/VIC_Baocaothuongnien_2025.pdf",
+        "status": "downloaded",
+        "size_bytes": 6171940
+      },
+      "BCTC_HOPNHAT": {
+        "path": "VIC/2025/BCTC/VIC_Baocaotaichinh_2025_Kiemtoan_Hopnhat.pdf",
+        "status": "downloaded",
+        "size_bytes": 14282040
+      }
+    }
+  }
+}
