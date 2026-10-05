@@ -1,4 +1,4 @@
-# Vietnamese Equity Research System
+# Document AI Assistant
 
 A full-stack GenAI application that lets investors and equity analysts query Vietnamese financial reports in natural language and get grounded, citable answers with supporting source passages and multi-year financial analysis.
 
