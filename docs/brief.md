@@ -1,125 +1,111 @@
-# Client Brief — Vietnamese Equity Research System
+# Brief — Vietnamese Equity Research System
 
-## The client
+## Summary
 
-**Vietnamese Equity Research System** is a fictional independent Vietnamese equity research platform for investors and securities analysts. They provide structured financial research on Vietnamese public companies, focusing on company fundamentals, multi-year financial performance, and growth-investing analysis based on the CANSLIM framework.
+**Vietnamese Equity Research System** is a fictional AI-powered research platform for Vietnamese investors and equity analysts.
 
-Their product is research, financial analysis, and an AI-powered research assistant that helps analysts reduce repetitive document and spreadsheet work.
-
-## How Northstar makes money
-
-- Each analyst covers a selected group of Vietnamese public companies across different industries.
-- Analysts produce research reports, financial analysis, financial models, and company-level investment research.
-- Clients pay for access to the research and analytical tools.
-- Research quality and data accuracy are critical because financial analysis depends on reliable and traceable information.
-
-## How they add value
-
-Investors and analysts do not have enough time to manually read every annual report, financial statement, and company disclosure for the companies they follow.
-
-Northstar's analysts collect and analyze this information, compare financial performance across multiple years, and turn large volumes of financial data into concise, structured research.
-
-The core value is **automation and condensation**: turning large volumes of source material and repetitive spreadsheet work into clear financial evidence that analysts can use for further investment research.
+The system helps users search Vietnamese financial reports, extract financial data, compare company performance across multiple years, and ask questions in natural language with grounded answers and source citations.
 
 ## The problem
 
-Each analyst spends significant time on repetitive financial-data intake and analysis:
+Investors and analysts often spend significant time manually working through annual reports and financial statements:
 
-- Opening annual reports and financial statements
-- Finding relevant financial figures and disclosures
-- Copying financial data into spreadsheets
-- Calculating year-over-year growth rates
-- Comparing financial performance across four or more years
-- Checking whether companies demonstrate consistent growth
-- Reviewing factors related to the CANSLIM investing framework
+- Finding relevant financial information
+- Copying figures into spreadsheets
+- Calculating year-over-year and multi-year growth
+- Comparing companies and business segments
+- Reviewing disclosures and risk factors
+- Repeating the same process across multiple years
 
-Only after completing this work can they begin their original analysis.
-
-This work is:
-
-- Boring
-- Necessary
-- Repetitive across analysts
-- Time-consuming
-- Prone to copy-paste and calculation errors
-- A significant constraint on analyst productivity
-
-Repeating the same process every year does not solve the problem because the document-intake and financial-analysis workload grows with the number of companies being covered.
+This repetitive work takes time away from actual investment research.
 
 ## What they want
 
-An internal AI research assistant called **Equity Research AI Assistant** that allows analysts to:
+An AI assistant that allows users to:
 
-- Ask questions in plain English or Vietnamese about companies and financial reports in Northstar's curated corpus
-- Get answers grounded in the source documents
-- Compare financial performance across multiple years
-- Calculate and explain relevant financial growth metrics
-- Identify evidence related to CANSLIM investing factors
-- Cite the specific report and page
-- View the supporting passage
-- Use the system from a browser
-- Sign in with their Northstar email address
-- View their own conversation history
+- Ask questions about Vietnamese companies and financial reports in natural language
+- Find relevant information across multiple years
+- Compare financial performance between companies or periods
+- Calculate and explain relevant financial metrics
+- Identify multi-year growth trends
+- Evaluate evidence related to CANSLIM factors
+- Cite the source report and page
+- Show the supporting passage
+- Refuse to answer when the available evidence is insufficient
+- Sign in and view their conversation history
 
-## Example analyst questions
+## Example questions
 
-The initial sample corpus contains annual reports and financial statements for FPT, VCB, HPG, MWG, and VIC across fiscal years 2021–2025.
+1. How did FPT's revenue and net profit grow from 2021 to 2025?
+2. What was FPT's revenue growth rate over the last four years?
+3. Compare MWG's revenue, gross profit, and net profit across 2021–2025.
+4. Which business segments contributed most to MWG's revenue growth?
+5. How did VCB's profitability and asset quality change over the available years?
+6. Which companies show the strongest multi-year earnings growth?
+7. What do the reports disclose about major risks, competitive advantages, or changes in business conditions?
+8. What evidence in the reports supports or weakens specific CANSLIM factors?
+9. Compare the financial performance of FPT, MWG, HPG, VCB, and VIC across the available years.
+10. When the reports do not provide enough evidence, what conclusions should the assistant refuse to make?
 
-The assistant should handle questions such as:
+## Initial corpus
 
-1. How did FPT's revenue and net profit change from 2021 to 2025?
-2. Has FPT demonstrated consistent revenue and earnings growth over the last four years?
-3. What were the year-over-year growth rates of HPG's revenue and net profit from 2022 to 2025?
-4. How did MWG's business performance change across the 2021–2025 period?
-5. How did VCB's profitability and asset growth change from 2021 to 2025?
-6. What were the major changes in VIC's business performance and financial position across the five-year period?
-7. Which companies in the corpus show consistent multi-year growth in revenue, earnings, or other selected financial metrics?
-8. What evidence in the reports is relevant to the CANSLIM factors for a selected company?
-9. What do the annual reports say about a company's earnings growth, new products or business developments, management, and other factors relevant to growth-investing research?
-10. Where does the available financial data provide insufficient evidence to evaluate a particular CANSLIM factor, and where should the assistant refuse to infer beyond the available evidence?
+The initial corpus contains Vietnamese financial reports for selected Vietnamese public companies across multiple years.
+
+Current sample companies:
+
+- FPT
+- VCB
+- MWG
+- VIC
+
+Target reporting period:
+
+- 2021–2025
 
 ## Trust requirements
 
-Northstar is an equity research platform, so **accuracy and traceability are critical**.
+This is an investment research application, so **accuracy and traceability are critical**.
 
 The assistant must:
 
-- Never invent financial facts
-- Only answer from the configured document corpus
-- Calculate financial metrics deterministically where possible
-- Cite the source report and page for factual claims
-- Show the underlying passage used to support the answer
-- Say when the available evidence is insufficient
-- Distinguish reported financial facts from AI-generated interpretation
+- Never invent financial data or facts
+- Only use information available in the document corpus
+- Cite the source report and page
+- Show the supporting passage
+- Clearly distinguish reported figures from calculated metrics
+- Refuse to make unsupported conclusions
 
 A confident but unsupported answer is worse than no answer.
 
 ## Constraints
 
-- **Corpus:** Vietnamese annual reports and financial statements for selected Vietnamese public companies, 2021–2025
-- **Initial companies:** FPT, VCB, HPG, MWG, VIC
-- **Source:** Vietstock-hosted Vietnamese public-company reports
-- **Users:** Equity analysts and investment researchers
-- **Authentication:** Northstar email addresses; no SSO required
+- **Corpus:** Vietnamese financial reports and annual reports
+- **Companies:** Vietnamese public companies
+- **Period:** 2021–2025
+- **Language:** Vietnamese
+- **Users:** Investors and equity analysts
+- **Authentication:** Email-based authentication
 - **Hosting:** Small/medium cloud footprint
-- **Infrastructure:** No dedicated infrastructure team
 
 ## Out of scope
 
+- Real-time stock prices
+- News and social media data
+- External alternative data
 - Automated trading
-- Direct buy/sell recommendations
-- Portfolio management
-- External data sources such as news, social media, or alternative data
-- Analysis not grounded in the document corpus
-- Multi-tenant or multi-client support
-- Billing, plans, or paywalls
-- Mobile applications
-- Replacing human investment decisions
+- Personalized financial advice
+- Unsubstantiated investment recommendations
+- Multi-tenant support
+- Mobile application
 
 ## Definition of done
 
-A pilot group of **5 equity analysts** uses the assistant for one week.
+The system should allow a user to:
 
-The project is considered successful if they report saving at least **3 hours per analyst per week** on financial-document intake, spreadsheet preparation, and repetitive multi-year financial analysis.
-
-If the pilot meets this goal, Northstar will consider expanding the system to additional Vietnamese public companies and wider research workflows.
+1. Search and retrieve relevant information from the financial-report corpus.
+2. Ask multi-year financial questions in natural language.
+3. Receive answers grounded in the source documents.
+4. Verify answers through page-level citations and supporting passages.
+5. Calculate relevant financial metrics from the available data.
+6. Compare companies and identify multi-year trends.
+7. Refuse unsupported conclusions rather than hallucinate.
