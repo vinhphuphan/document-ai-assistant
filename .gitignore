@@ -1,0 +1,4 @@
+/data/*
+!/data/download.py
+!/data/README.md
+
